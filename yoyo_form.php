@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-	<div id="content">
-		
+<?php require("header.php"); ?>
+	<div class="ui-widget ui-widget-content ui-corner-all" style="padding:25px; margin-top:25px;">
 		<?php
 		$oB = "&lt;b&gt;";
 		$cB = "&lt;/b&gt;";
@@ -143,7 +138,5 @@
 		if(!empty($_POST["aboutCompany"])){
 			echo "<br/>".$aboutCompany. "<br/>";
 		}
-	?>
-	</div>
-</body>
-</html>
+	?></div>
+<?php require("footer.php"); ?>

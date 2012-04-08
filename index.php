@@ -44,7 +44,7 @@
 		});
 	</script>
 		
-<div id="content">
+
 <header><h2>Writer Mate</h2></header>
 
 <section>
@@ -146,5 +146,4 @@
 	</form>
 	<br/><br/>
 </section>
-</div>
-<?php include("footer.php"); ?>
+<?php require("footer.php"); ?>
