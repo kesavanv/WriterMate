@@ -13,6 +13,10 @@
         }
     }
 </script>
+<ol class="info">
+	<li>Click ONCE inside the content</li>
+	<li>Do CTRL + C to copy</li>
+</ol>
 <div id="selectable"  onclick="selectText()" class="ui-widget ui-widget-content ui-corner-all" style="padding: 25px; margin-top: 25px">		
 		<?php
 		$oB = "&lt;b&gt;";
@@ -137,4 +141,9 @@
 		
 	?>
 	</div>
+	<h4>What to do next?</h4>
+	<ul>
+		<li><a href="index.php">New content for diapers</a></li>
+		<li><a href="yoyo.php">New content for yoyo</a></li>
+	</ul>
 <?php require("footer.php"); ?>

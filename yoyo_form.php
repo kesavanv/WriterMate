@@ -157,4 +157,9 @@
 			echo "<br/>".$aboutCompany. "<br/>";
 		}
 	?></div>
+	<h4>What to do next?</h4>
+	<ul>
+		<li><a href="index.php">New content for diapers</a></li>
+		<li><a href="yoyo.php">New content for yoyo</a></li>
+	</ul>
 <?php require("footer.php"); ?>
