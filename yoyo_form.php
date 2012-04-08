@@ -1,5 +1,23 @@
 <?php require("header.php"); ?>
-	<div class="ui-widget ui-widget-content ui-corner-all" style="padding:25px; margin-top:25px;">
+<script type="text/javascript">
+    function selectText() {
+        if (document.selection) {
+        var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById('selectable'));
+        range.select();
+        }
+        else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('selectable'));
+        window.getSelection().addRange(range);
+        }
+    }
+</script>
+<ol class="info">
+	<li>Click ONCE inside the content</li>
+	<li>Do CTRL + C to copy</li>
+</ol>
+<div id="selectable"  onclick="selectText()" class="ui-widget ui-widget-content ui-corner-all" style="padding: 25px; margin-top: 25px">		
 		<?php
 		$oB = "&lt;b&gt;";
 		$cB = "&lt;/b&gt;";

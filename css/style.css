@@ -85,20 +85,10 @@ input[type="textbox"], input[type="text"]{width: 50%;}
 #featureGroup p{margin-bottom: 3px;}
 
 
-/*
-#formWrap{float: left; width: 90%*; margin-right: 10px;  padding: 10px;}
-#codeWrap {float: left; width: 50%; }
-#content.viewMode #formWrap, #content #codeWrap{display: none;}
-#content #formWrap, #content.viewMode #codeWrap{display: block;}
-label{ float: left; width: 30%;  text-align: right; padding-right: 10px; display: block; }
-p{float: left; width: 100%; }
-legend{}
+footer{margin-top: 25px;}
+footer p{color: #aaa;}
 
-
-#formWrap section{float: left; width: 30%; margin-right: 10px;}*/
-
-#siteSelector { padding: 25px; text-align: center; width: 150px; margin-left: 30%;}
-#siteSelector p{font-size: 1.5em;}
+.info{font-weight: bold; font-size: 1.2em;}
 
 
 

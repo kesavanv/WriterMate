@@ -1,5 +1,19 @@
 <?php require("header.php"); ?>
-	<div class="ui-widget ui-widget-content ui-corner-all" style="padding: 25px; margin-top: 25px">		
+<script type="text/javascript">
+    function selectText() {
+        if (document.selection) {
+        var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById('selectable'));
+        range.select();
+        }
+        else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('selectable'));
+        window.getSelection().addRange(range);
+        }
+    }
+</script>
+<div id="selectable"  onclick="selectText()" class="ui-widget ui-widget-content ui-corner-all" style="padding: 25px; margin-top: 25px">		
 		<?php
 		$oB = "&lt;b&gt;";
 		$cB = "&lt;/b&gt;";
@@ -26,7 +40,7 @@
 		$awards = $oB."Awards: ".$cB.$_POST["awards"].$br;
 		$certification = $oB."Certification: ".$cB.$_POST["certification"].$br;
 		$aboutCompany = $oB."From the Company: ".$cB."<br/>".$oP.$_POST["aboutCompany"].$cP.$br;
-				
+
 		echo "<p>DESCRIPTION TAB</p>";
 		
 		if(!empty($_POST["prodName"])){
@@ -120,6 +134,7 @@
 		if(!empty($_POST["aboutCompany"])){
 			echo "<br/>".$aboutCompany. "<br/>";
 		}
+		
 	?>
 	</div>
 <?php require("footer.php"); ?>
