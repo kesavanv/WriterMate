@@ -176,9 +176,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="tabs-1"> Worth Waiting ! ... </div>
 	</div>
 	</form>
+	<br/><br/>
 </section>
 </div>
 <?php include("footer.php"); ?>

@@ -141,10 +141,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="tabs-2"> Worth Waiting ! ... </div>
+		</div>		
 	</div>
 	</form>
+	<br/><br/>
 </section>
 </div>
 <?php include("footer.php"); ?>
